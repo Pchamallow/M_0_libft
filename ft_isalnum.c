@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pswirgie <pswirgie@42angouleme.fr>         +#+  +:+       +#+        */
+/*   By: pswirgie <pswirgie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 17:53:42 by pswirgie          #+#    #+#             */
-/*   Updated: 2025/10/22 11:27:38 by pswirgie         ###   ########.fr       */
+/*   Updated: 2026/01/31 19:36:01 by pswirgie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 int	ft_isalnum(int c)

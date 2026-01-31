@@ -6,9 +6,11 @@
 /*   By: pswirgie <pswirgie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 16:07:56 by pswirgie          #+#    #+#             */
-/*   Updated: 2026/01/15 18:59:38 by pswirgie         ###   ########.fr       */
+/*   Updated: 2026/01/31 19:35:57 by pswirgie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isalpha(char c)
 {

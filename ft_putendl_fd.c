@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pswirgie <pswirgie@42angouleme.fr>         +#+  +:+       +#+        */
+/*   By: pswirgie <pswirgie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/06 09:00:45 by pswirgie          #+#    #+#             */
-/*   Updated: 2025/11/09 17:23:43 by pswirgie         ###   ########.fr       */
+/*   Updated: 2026/01/31 19:33:34 by pswirgie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include <unistd.h>
 
 void	ft_putendl_fd(char *s, int fd)

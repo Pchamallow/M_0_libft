@@ -6,9 +6,11 @@
 /*   By: pswirgie <pswirgie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 13:35:17 by pswirgie          #+#    #+#             */
-/*   Updated: 2026/01/15 18:56:01 by pswirgie         ###   ########.fr       */
+/*   Updated: 2026/01/31 19:35:41 by pswirgie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isascii(int c)
 {

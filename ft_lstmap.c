@@ -1,14 +1,15 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstmap_bonus.c                                  :+:      :+:    :+:   */
+/*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pswirgie <pswirgie@42angouleme.fr>         +#+  +:+       +#+        */
+/*   By: pswirgie <pswirgie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/07 08:14:41 by pswirgie          #+#    #+#             */
-/*   Updated: 2025/11/08 18:56:55 by pswirgie         ###   ########.fr       */
+/*   Updated: 2026/01/31 19:34:24 by pswirgie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
@@ -27,7 +28,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 		if (!temp)
 		{
 			del(tmp_obj);
-			ft_lstclear(&list, del);
+			ft_lstclear(&list);
 			return (NULL);
 		}
 		ft_lstadd_back(&list, temp);

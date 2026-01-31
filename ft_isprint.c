@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pswirgie <pswirgie@42angouleme.fr>         +#+  +:+       +#+        */
+/*   By: pswirgie <pswirgie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 18:03:43 by pswirgie          #+#    #+#             */
-/*   Updated: 2025/10/15 18:09:10 by pswirgie         ###   ########.fr       */
+/*   Updated: 2026/01/31 19:35:05 by pswirgie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isprint(int c)
 {

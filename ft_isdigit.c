@@ -6,9 +6,11 @@
 /*   By: pswirgie <pswirgie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 17:33:59 by pswirgie          #+#    #+#             */
-/*   Updated: 2026/01/15 19:08:21 by pswirgie         ###   ########.fr       */
+/*   Updated: 2026/01/31 19:35:27 by pswirgie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isdigit(int c)
 {

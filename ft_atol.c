@@ -6,9 +6,11 @@
 /*   By: pswirgie <pswirgie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 15:56:27 by pswirgie          #+#    #+#             */
-/*   Updated: 2026/01/19 18:21:06 by pswirgie         ###   ########.fr       */
+/*   Updated: 2026/01/31 19:36:27 by pswirgie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 long	ft_atol(char *str)
 {

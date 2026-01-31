@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pswirgie <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: pswirgie <pswirgie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/22 15:42:06 by pswirgie          #+#    #+#             */
-/*   Updated: 2025/11/02 16:30:17 by pswirgie         ###   ########.fr       */
+/*   Updated: 2026/01/31 19:33:43 by pswirgie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
