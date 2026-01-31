@@ -6,7 +6,7 @@
 /*   By: pswirgie <pswirgie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/22 10:50:27 by pswirgie          #+#    #+#             */
-/*   Updated: 2026/01/25 21:33:13 by pswirgie         ###   ########.fr       */
+/*   Updated: 2026/01/31 18:34:29 by pswirgie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,14 @@
 # include <unistd.h>
 # include <limits.h>
 # include <ctype.h>
-# include "../structures.h"
+
+
+typedef struct s_list
+{
+	int				content;
+	int				index;
+	struct s_list	*next;
+}					t_list;
 
 // Part 1 - Libc functions
 long	ft_atol(char *str);

@@ -6,15 +6,16 @@
 #    By: pswirgie <pswirgie@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/15 18:40:53 by pswirgie          #+#    #+#              #
-#    Updated: 2026/01/19 16:08:39 by pswirgie         ###   ########.fr        #
+#    Updated: 2026/01/31 18:38:09 by pswirgie         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-CC = cc
-FLAGS = -Wall -Wextra -Werror -g
-DATE = $(shell date +"%y_%m_%d_%H-%M-%S")
-NAME = libft.a
-FILES = ft_atol.c \
+CC		:= cc
+FLAGS	:= -Wall -Wextra -Werror -g
+DATE	:= $(shell date +"%y_%m_%d_%H-%M-%S")
+NAME	:= libft.a
+FILES	:= \
+	ft_atol.c \
 	ft_bzero.c \
 	ft_isalpha.c \
 	ft_isascii.c \
@@ -58,34 +59,35 @@ FILES = ft_atol.c \
 # 	ft_lstiter.c \
 # 	ft_lstmap.c \
 
-OBJET = ${FILES:.c=.o}
+OBJET	:= $(FILES:.c=.o)
 
 %.o : %.c
-	@${CC} ${FLAGS} -c $< -o $@
+	@$(CC) $(FLAGS) -c $< -o $@
 
-all : ${NAME}
+all : $(NAME)
 
-${NAME}: ${OBJET}
-	@ar rcs $@ ${OBJET}
+$(NAME): $(OBJET)
+	@$(AR) rcs $@ $(OBJET)
 	@echo "Libft.a is created"
 
 clean :
-	@rm -rf ${OBJET}
+	@rm -rf $(OBJET)
 
 fclean : clean
-	@rm -rf ${NAME}
+	@rm -rf $(NAME)
 
-re : fclean all
+re : fclean 
+	$(MAKE) all
 
 zip:
 	zip DATE_HOUR.zip *
-	mv DATE_HOUR.zip ${DATE}.zip
-	mv ${DATE}.zip 00_ARCHIVES
+	mv DATE_HOUR.zip $(DATE).zip
+	mv $(DATE).zip 00_ARCHIVES
 
 unzip:
-	unzip *.zip -d ${DATE}
+	unzip *.zip -d $(DATE)
 
 setup :
 	mkdir 00_ARCHIVES
 
-.PHONY : all clean fclean re
+.PHONY : all clean fclean re setup unzip zip
