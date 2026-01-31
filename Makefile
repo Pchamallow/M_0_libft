@@ -6,7 +6,7 @@
 #    By: pswirgie <pswirgie@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/15 18:40:53 by pswirgie          #+#    #+#              #
-#    Updated: 2026/01/31 18:50:40 by pswirgie         ###   ########.fr        #
+#    Updated: 2026/01/31 18:56:20 by pswirgie         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -80,7 +80,7 @@ clean :
 fclean : clean
 	@rm -rf $(NAME)
 
-re : fclean 
+re : fclean
 	$(MAKE) all
 
 zip:
