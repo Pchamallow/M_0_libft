@@ -6,7 +6,7 @@
 #    By: pswirgie <pswirgie@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/15 18:40:53 by pswirgie          #+#    #+#              #
-#    Updated: 2026/01/31 18:56:20 by pswirgie         ###   ########.fr        #
+#    Updated: 2026/02/15 17:29:12 by pswirgie         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -56,7 +56,7 @@ FILES	:= \
 	ft_lstadd_back.c \
 	ft_lstclear.c \
 	ft_printchar.c\
-	ft_printf.c\
+	ft_printf_fd.c\
 	ft_printpercent.c\
 	ft_putpointer.c\
 # 	ft_lstdelone.c \

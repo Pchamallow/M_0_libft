@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.c                                        :+:      :+:    :+:   */
+/*   ft_printf_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pswirgie <pswirgie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/08 11:45:50 by pswirgie          #+#    #+#             */
-/*   Updated: 2026/01/31 18:48:49 by pswirgie         ###   ########.fr       */
+/*   Updated: 2026/02/15 17:25:49 by pswirgie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,15 +47,13 @@ static int	helper(const char **format, va_list args)
 	return (0);
 }
 
-int	ft_printf(const char *format, ...)
+int	ft_printf_fd(int fd, const char *format, ...)
 {
 	int		count;
 	va_list	args;
-	int		fd;
 	int		(*ft_format[127])(va_list, int);
 
 	count = 0;
-	fd = 1;
 	if (fd < 0 || !format)
 		return (-1);
 	va_start(args, format);

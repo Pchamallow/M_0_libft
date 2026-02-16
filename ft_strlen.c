@@ -6,13 +6,13 @@
 /*   By: pswirgie <pswirgie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 18:13:18 by pswirgie          #+#    #+#             */
-/*   Updated: 2026/01/31 19:32:30 by pswirgie         ###   ########.fr       */
+/*   Updated: 2026/02/07 14:29:22 by pswirgie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strlen(const char *s)
+size_t	ft_strlen(const char *s)
 {
 	long int	i;
 
@@ -20,6 +20,6 @@ int	ft_strlen(const char *s)
 	if (!s)
 		return (0);
 	while (s[i])
-		i ++;
+		i++;
 	return (i);
 }
